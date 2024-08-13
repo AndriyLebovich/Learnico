@@ -107,14 +107,19 @@
 						<div class="courses-info__text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
 								elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-								diam libero vitae erat.</p>
+								diam libero vitae <span id="hidden-text" class="courses-info__hidden-text">Lorem
+									ipsum dolor sit
+									amet, consectetur adipisicing elit. Quibusdam
+									autem maxime, minima a quos cum molestiae magnam ad ea eos natus esse nam. Molestias
+									voluptatem, nulla repudiandae dicta cum corporis.</span></p>
 						</div>
 						<div class="courses-info__buttons">
 							<div class="wrapper__register-btn">
 								<a href="#popup_register" class="courses-info__start popup-link">Get started</a>
 							</div>
 							<div class="wrapper__courses-link">
-								<a class="courses-info__more" href="">Learn more</a>
+								<button href="#hidden-text" class="courses-info__more btn-more">Learn
+									more</button>
 							</div>
 						</div>
 					</div>
@@ -128,14 +133,19 @@
 						<div class="courses-info__text">
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
 								elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-								diam libero vitae erat.</p>
+								diam libero vitae erat. <span id="hidden-text-two" class="courses-info__hidden-text">Lorem ipsum
+									dolor sit amet consectetur, adipisicing elit.
+									Corporis, repellendus pariatur! Incidunt ipsam perferendis nemo modi repudiandae doloremque
+									eaque. Molestias mollitia quasi sunt, atque aliquid exercitationem. Distinctio maxime id
+									beatae?</span></p>
 						</div>
 						<div class="courses-info__buttons">
 							<div class="wrapper__register-btn">
 								<a href="#popup_register" class="courses-info__start popup-link">Get started</a>
 							</div>
 							<div class="wrapper__courses-link">
-								<a class="courses-info__more" href="">Learn more</a>
+								<button href="#hidden-text-two" class="courses-info__more btn-more">Learn
+									more</button>
 							</div>
 						</div>
 					</div>
@@ -445,299 +455,386 @@
 						</div>
 					</div>
 				</div>
-	</div>
-	</section>
-	<section class="blog">
-		<div class="blog__container container">
-			<div class="blog__top">
-				<div class="blog__titles">
-					<div class="blog__title wrapper__title">
-						<title>Blog</title>
-					</div>
-					<div class="blog__sub-title wrapper__sub-title">
-						<title>Our latest post</title>
-					</div>
-				</div>
-				<button class="blog__btn">View all</button>
-			</div>
-			<div class="blog__items">
-				<div class="blog__item">
-					<div class="blog__item-img">
-						<img src="/fonts/blog/item-1.png" alt="">
-					</div>
-					<div class="blog__item-info">
-						<div class="blog__info-text">
-							<div class="blog__item-title">
-								<title>Freelance</title>
+			</section>
+			<section class="blog">
+				<div class="blog__container container">
+					<div class="blog__top">
+						<div class="blog__titles">
+							<div class="blog__title wrapper__title">
+								<title>Blog</title>
 							</div>
-							<div class="blog__item-sub-title">
-								<title>7 freelance mistakes to avoid</title>
-							</div>
-							<div class="blog__item-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-									eros.
-								</p>
+							<div class="blog__sub-title wrapper__sub-title">
+								<title>Our latest post</title>
 							</div>
 						</div>
-						<div class="blog__item-link">
-							<a href="#">Read more</a>
-						</div>
+						<button href="#view-all" class="blog__btn btn-view__active">View all</button>
 					</div>
-				</div>
-				<div class="blog__item">
-					<div class="blog__item-img">
-						<img src="/fonts/blog/item-2.png" alt="">
-					</div>
-					<div class="blog__item-info">
-						<div class="blog__info-text">
-							<div class="blog__item-title">
-								<title>UI/UX Design</title>
+					<div id="view-all" class="blog__items">
+						<div class="blog__item">
+							<div class="blog__item-img">
+								<img src="/fonts/blog/item-1.png" alt="">
 							</div>
-							<div class="blog__item-sub-title">
-								<title>Brand design process explained</title>
-							</div>
-							<div class="blog__item-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-									eros.
-								</p>
-							</div>
-						</div>
-						<div class="blog__item-link">
-							<a href="#">Read more</a>
-						</div>
-					</div>
-				</div>
-				<div class="blog__item">
-					<div class="blog__item-img">
-						<img src="/fonts/blog/item-3.png" alt="">
-					</div>
-					<div class="blog__item-info">
-						<div class="blog__info-text">
-							<div class="blog__item-title">
-								<title>Business</title>
-							</div>
-							<div class="blog__item-sub-title">
-								<title>The beginners guide to recruiting a Webflow developer</title>
-							</div>
-							<div class="blog__item-text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
-									eros.
-								</p>
+							<div class="blog__item-info">
+								<div class="blog__info-text">
+									<div class="blog__item-title">
+										<title>Freelance</title>
+									</div>
+									<div class="blog__item-sub-title">
+										<title>7 freelance mistakes to avoid</title>
+									</div>
+									<div class="blog__item-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+											eros.
+										</p>
+									</div>
+								</div>
+								<div class="blog__item-link">
+									<a href="#">Read more</a>
+								</div>
 							</div>
 						</div>
-						<div class="blog__item-link">
-							<a href="#">Read more</a>
+						<div class="blog__item">
+							<div class="blog__item-img">
+								<img src="/fonts/blog/item-2.png" alt="">
+							</div>
+							<div class="blog__item-info">
+								<div class="blog__info-text">
+									<div class="blog__item-title">
+										<title>UI/UX Design</title>
+									</div>
+									<div class="blog__item-sub-title">
+										<title>Brand design process explained</title>
+									</div>
+									<div class="blog__item-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+											eros.
+										</p>
+									</div>
+								</div>
+								<div class="blog__item-link">
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog__item">
+							<div class="blog__item-img">
+								<img src="/fonts/blog/item-3.png" alt="">
+							</div>
+							<div class="blog__item-info">
+								<div class="blog__info-text">
+									<div class="blog__item-title">
+										<title>Business</title>
+									</div>
+									<div class="blog__item-sub-title">
+										<title>The beginners guide to recruiting a Webflow developer</title>
+									</div>
+									<div class="blog__item-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+											eros.
+										</p>
+									</div>
+								</div>
+								<div class="blog__item-link">
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog__item">
+							<div class="blog__item-img">
+								<img src="/fonts/blog/item-1.png" alt="">
+							</div>
+							<div class="blog__item-info">
+								<div class="blog__info-text">
+									<div class="blog__item-title">
+										<title>Freelance</title>
+									</div>
+									<div class="blog__item-sub-title">
+										<title>7 freelance mistakes to avoid</title>
+									</div>
+									<div class="blog__item-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+											eros.
+										</p>
+									</div>
+								</div>
+								<div class="blog__item-link">
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog__item">
+							<div class="blog__item-img">
+								<img src="/fonts/blog/item-1.png" alt="">
+							</div>
+							<div class="blog__item-info">
+								<div class="blog__info-text">
+									<div class="blog__item-title">
+										<title>Freelance</title>
+									</div>
+									<div class="blog__item-sub-title">
+										<title>7 freelance mistakes to avoid</title>
+									</div>
+									<div class="blog__item-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+											eros.
+										</p>
+									</div>
+								</div>
+								<div class="blog__item-link">
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+						<div class="blog__item">
+							<div class="blog__item-img">
+								<img src="/fonts/blog/item-1.png" alt="">
+							</div>
+							<div class="blog__item-info">
+								<div class="blog__info-text">
+									<div class="blog__item-title">
+										<title>Freelance</title>
+									</div>
+									<div class="blog__item-sub-title">
+										<title>7 freelance mistakes to avoid</title>
+									</div>
+									<div class="blog__item-text">
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in
+											eros.
+										</p>
+									</div>
+								</div>
+								<div class="blog__item-link">
+									<a href="#">Read more</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</section>
+			<section class="register">
+				<div class="register__container container">
+					<div class="register__title wrapper__sub-title">
+						<title>Start learning today</title>
+					</div>
+					<div class="register__text">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+							tristique.</p>
+					</div>
+					<div class="register__buttons">
+						<button href="#popup_register" class="register__btn-start popup-link">Get started</button>
+						<button href="#popup-contact" class="register__btn-contact popup-link">Contact us</button>
+					</div>
+				</div>
+			</section>
+			<div class="popups">
+				<div id="popup_register" class="popup lock-padding">
+					<div class="popup__body">
+						<div class="popup__content">
+							<a href="#" class="popup__close close-popup">X</a>
+							<form action="#">
+								<title class="popup-register__title">Login</title>
+								<input type="text" id="username" placeholder="Enter your username">
+								<label for="username" onclick="expand(this)">USERNAME</label>
+								<input type="password" id="password" placeholder="Enter your password">
+								<label for="password" onclick="expand(this)">PASSWORD</label>
+								<button>SUBMIT</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div id="popup__about-us" class="popup lock-padding">
+					<div class="popup__body">
+						<div class="popup__content popup-about__content">
+							<div class="popup__title">
+								<title>What is Learnico ?</title>
+							</div>
+							<div class="popup-about__content-block">
+								<div class="popup-about__text">
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, autem tempora? Esse
+										corporis
+										iure et reiciendis laborum! Nostrum repudiandae deleniti vitae. Fuga ducimus voluptate
+										provident impedit iusto numquam dolorum ipsam!
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat vitae temporibus
+										asperiores ipsum quam aspernatur ea perferendis impedit! Impedit, facere rem. Quibusdam
+										porro, unde iusto praesentium cupiditate blanditiis architecto.
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ullam quod aliquid! Quis
+										aliquam modi numquam repudiandae sed, accusamus quibusdam vero voluptatibus ducimus
+										expedita
+										repellat. Est corporis eaque quidem doloremque?
+									</p>
+								</div>
+								<img src="/fonts/courses-info/IMAGE-1.png" alt="" class="popup-about__img">
+							</div>
+							<div class="popup__close close-popup">
+								<a href="#">X</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="popup__search" class="popup lock-padding">
+					<div class="popup__body">
+						<div class="popup__content popup-search__content">
+							<div class="popup__close close-popup">
+								<a href="#">X</a>
+							</div>
+							<div class="popup__title">
+								<title>Search</title>
+							</div>
+							<div class="popup-search__input-container">
+								<input placeholder="Enter text" class="popup__search-input" type="text">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="popup__video" class="popup lock-padding">
+					<div class="popup__body">
+						<div class="popup-video__content popup__content">
+							<video controls class="popup__video" id="popup__video-id" src="/fonts/video/test-video.mp4"
+								type="video/mp4"></video>
+						</div>
+					</div>
+				</div>
+				<div id="popup-contact" class="popup lock-padding">
+					<div class="popup__body">
+						<div class="popup-contact__content popup__content">
+							<a href="#" class="popup__close close-popup">X</a>
+							<div class="popup-contact__links-container">
+								<div class="links-container__item">
+									<p>Telefon</p>
+									<a href="#">+48000123456</a>
+								</div>
+								<div class="links-container__item">
+									<p>Email</p>
+									<a href="#">learnico@gmail.com</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="register">
-		<div class="register__container container">
-			<div class="register__title wrapper__sub-title">
-				<title>Start learning today</title>
-			</div>
-			<div class="register__text">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
-					tristique.</p>
-			</div>
-			<div class="register__buttons">
-				<button href="#popup_register" class="register__btn-start popup-link">Get started</button>
-				<button class="register__btn-contact">Contact us</button>
-			</div>
-		</div>
-	</section>
-	<div class="popups">
-		<div id="popup_register" class="popup lock-padding">
-			<div class="popup__body">
-				<div class="popup__content">
-					<a href="#" class="popup__close close-popup">X</a>
-					<form action="#">
-						<title class="popup-register__title">Login</title>
-						<input type="text" id="username" placeholder="Enter your username">
-						<label for="username" onclick="expand(this)">USERNAME</label>
-						<input type="password" id="password" placeholder="Enter your password">
-						<label for="password" onclick="expand(this)">PASSWORD</label>
-						<button>SUBMIT</button>
-					</form>
-				</div>
-			</div>
-		</div>
-		<div id="popup__about-us" class="popup lock-padding">
-			<div class="popup__body">
-				<div class="popup__content popup-about__content">
-					<div class="popup__title">
-						<title>What is Learnico ?</title>
-					</div>
-					<div class="popup-about__content-block">
-						<div class="popup-about__text">
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, autem tempora? Esse
-								corporis
-								iure et reiciendis laborum! Nostrum repudiandae deleniti vitae. Fuga ducimus voluptate
-								provident impedit iusto numquam dolorum ipsam!
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod fugiat vitae temporibus
-								asperiores ipsum quam aspernatur ea perferendis impedit! Impedit, facere rem. Quibusdam
-								porro, unde iusto praesentium cupiditate blanditiis architecto.
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam ullam quod aliquid! Quis
-								aliquam modi numquam repudiandae sed, accusamus quibusdam vero voluptatibus ducimus
-								expedita
-								repellat. Est corporis eaque quidem doloremque?
-							</p>
+		</main>
+		<footer class="footer">
+			<div class="footer__container container">
+				<div class="footer__content">
+					<div class="footer__section-input">
+						<p class="input__text-top">Join our newsletter to stay up to date on features and releases.</p>
+						<div class="input__container">
+							<div class="wrapper__input">
+								<input type="text">
+							</div>
+							<div class="wrapper__input-btn">
+								<button class="input__btn">Subscribe</button>
+							</div>
 						</div>
-						<img src="/fonts/courses-info/IMAGE-1.png" alt="" class="popup-about__img">
+						<p class="input__text-bottom">and provide consent to receive updates from our company.</p>
 					</div>
-					<div class="popup__close close-popup">
-						<a href="#">X</a>
+					<ul class="footer__page-sections">
+						<p class="page-section__title">
+							Pages
+						</p>
+						<li>
+							<a href="#">Home</a>
+						</li>
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+						<li>
+							<a href="#">Blog</a>
+						</li>
+						<li>
+							<a href="#">Courses</a>
+						</li>
+						<li>
+							<a href="#">Teachers</a>
+						</li>
+					</ul>
+					<ul class="footer__page-sections">
+						<p class="page-section__title">
+							CMS Pages
+						</p>
+						<li>
+							<a href="#">Blog Post</a>
+						</li>
+						<li>
+							<a href="#">Blog Categories</a>
+						</li>
+						<li>
+							<a href="#">Courses Single</a>
+						</li>
+						<li>
+							<a href="#">Courses Categories</a>
+						</li>
+						<li>
+							<a href="#">Product Page</a>
+						</li>
+						<li>
+							<a href="#">Product Categories</a>
+						</li>
+						<li>
+							<a href="#">Teachers Single</a>
+						</li>
+						<li>
+							<a href="#">Episode Single</a>
+						</li>
+					</ul>
+					<ul class="footer__page-sections">
+						<p class="page-section__title">
+							Account Pages
+						</p>
+						<li>
+							<a href="#">Login</a>
+						</li>
+						<li>
+							<a href="#">Sign Up</a>
+						</li>
+						<li>
+							<a href="#">Forgot Password</a>
+						</li>
+						<li>
+							<a href="#">Reset Password</a>
+						</li>
+						<li>
+							<a href="#">Email Confirmation</a>
+						</li>
+					</ul>
+					<ul class="footer__page-sections">
+						<p class="page-section__title">
+							Utility Pages
+						</p>
+						<li>
+							<a href="#">Style Guide</a>
+						</li>
+						<li>
+							<a href="#">Changelog</a>
+						</li>
+						<li>
+							<a href="#">Licenses</a>
+						</li>
+						<li>
+							<a href="#">404</a>
+						</li>
+						<li>
+							<a href="#">Password</a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer__bottom">
+					<div class="footer__text-bottom">
+						<p>@ Learnico by Minimal Square. Powered by Webflow.</p>
+					</div>
+					<div class="footer__icons-bottom">
+						<img src="/fonts/footer/footer__bottom/facebook.svg" alt="">
+						<img src="/fonts/footer/footer__bottom/twitter.svg" alt="">
+						<img src="/fonts/footer/footer__bottom/instagram.svg" alt="">
 					</div>
 				</div>
 			</div>
-		</div>
-		<div id="popup__search" class="popup lock-padding">
-			<div class="popup__body">
-				<div class="popup__content popup-search__content">
-					<div class="popup__close close-popup">
-						<a href="#">X</a>
-					</div>
-					<div class="popup__title">
-						<title>Search</title>
-					</div>
-					<div class="popup-search__input-container">
-						<input placeholder="Enter text" class="popup__search-input" type="text">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="popup__video" class="popup lock-padding">
-			<div class="popup__body">
-				<div class="popup__content">
-					<video src=""></video>
-				</div>
-			</div>
-		</div>
-	</div>
-	</main>
-	<footer class="footer">
-		<div class="footer__container container">
-			<div class="footer__content">
-				<div class="footer__section-input">
-					<p class="input__text-top">Join our newsletter to stay up to date on features and releases.</p>
-					<div class="input__container">
-						<div class="wrapper__input">
-							<input type="text">
-						</div>
-						<div class="wrapper__input-btn">
-							<button class="input__btn">Subscribe</button>
-						</div>
-					</div>
-					<p class="input__text-bottom">and provide consent to receive updates from our company.</p>
-				</div>
-				<ul class="footer__page-sections">
-					<p class="page-section__title">
-						Pages
-					</p>
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li>
-						<a href="#">About</a>
-					</li>
-					<li>
-						<a href="#">Contact</a>
-					</li>
-					<li>
-						<a href="#">Blog</a>
-					</li>
-					<li>
-						<a href="#">Courses</a>
-					</li>
-					<li>
-						<a href="#">Teachers</a>
-					</li>
-				</ul>
-				<ul class="footer__page-sections">
-					<p class="page-section__title">
-						CMS Pages
-					</p>
-					<li>
-						<a href="#">Blog Post</a>
-					</li>
-					<li>
-						<a href="#">Blog Categories</a>
-					</li>
-					<li>
-						<a href="#">Courses Single</a>
-					</li>
-					<li>
-						<a href="#">Courses Categories</a>
-					</li>
-					<li>
-						<a href="#">Product Page</a>
-					</li>
-					<li>
-						<a href="#">Product Categories</a>
-					</li>
-					<li>
-						<a href="#">Teachers Single</a>
-					</li>
-					<li>
-						<a href="#">Episode Single</a>
-					</li>
-				</ul>
-				<ul class="footer__page-sections">
-					<p class="page-section__title">
-						Account Pages
-					</p>
-					<li>
-						<a href="#">Login</a>
-					</li>
-					<li>
-						<a href="#">Sign Up</a>
-					</li>
-					<li>
-						<a href="#">Forgot Password</a>
-					</li>
-					<li>
-						<a href="#">Reset Password</a>
-					</li>
-					<li>
-						<a href="#">Email Confirmation</a>
-					</li>
-				</ul>
-				<ul class="footer__page-sections">
-					<p class="page-section__title">
-						Utility Pages
-					</p>
-					<li>
-						<a href="#">Style Guide</a>
-					</li>
-					<li>
-						<a href="#">Changelog</a>
-					</li>
-					<li>
-						<a href="#">Licenses</a>
-					</li>
-					<li>
-						<a href="#">404</a>
-					</li>
-					<li>
-						<a href="#">Password</a>
-					</li>
-				</ul>
-			</div>
-			<div class="footer__bottom">
-				<div class="footer__text-bottom">
-					<p>@ Learnico by Minimal Square. Powered by Webflow.</p>
-				</div>
-				<div class="footer__icons-bottom">
-					<img src="/fonts/footer/footer__bottom/facebook.svg" alt="">
-					<img src="/fonts/footer/footer__bottom/twitter.svg" alt="">
-					<img src="/fonts/footer/footer__bottom/instagram.svg" alt="">
-				</div>
-			</div>
-		</div>
-	</footer>
+		</footer>
 	</div>
 	<script src="js/script.js"></script>
 </body>

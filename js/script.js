@@ -54,6 +54,7 @@ function onScrollButtonClick(e) {
 const popupLinks = document.querySelectorAll('.popup-link');
 const body = document.querySelector('body');
 const lockPadding = document.querySelectorAll(".lock-padding");
+const video = document.getElementById('popup__video-id');
 
 let unlock = true;
 
@@ -104,6 +105,7 @@ function popupOpen(curentPopup) {
 function popupClose(popupActive, doUnlock = true) {
   if (unlock) {
     popupActive.classList.remove('open');
+    video.pause();
     if (doUnlock) {
       bodyUnLock()
     }
@@ -192,3 +194,42 @@ controlls.forEach((e) => {
 })
 
 show(indexSlider);
+
+
+
+
+// Text more ( learn more )
+
+const linkBox = document.querySelectorAll(".btn-more");
+
+linkBox.forEach((box) => {
+  box.addEventListener("click", () => {
+    let elem = document.querySelector(box.getAttribute("href"));
+    readItem(elem);
+  });
+});
+
+function readItem(elem) {
+  elem.classList.toggle('_show');
+}
+
+
+
+// View all
+
+const btnView = document.querySelector(".btn-view__active");
+
+btnView.addEventListener("click", () => {
+  let viewItem = document.querySelector(btnView.getAttribute("href"));
+  viewAll(viewItem);
+});
+
+function viewAll(viewItem) {
+  viewItem.classList.toggle('_active');
+}
+
+
+
+
+
+
