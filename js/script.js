@@ -37,7 +37,7 @@ function onScrollButtonClick(e) {
   const scrollButton = e.target;
   if (scrollButton.dataset.goto && document.querySelector(scrollButton.dataset.goto)) {
     const gotoBlock = document.querySelector(scrollButton.dataset.goto);
-    const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+    const gotoBlockValue = gotoBlock.getBoundingClientRect().top - pageYOffset - document.querySelector('.header__top').offsetHeight;
 
     window.scrollTo({
       top: gotoBlockValue,
@@ -162,9 +162,62 @@ function expand(lbl) {
 
 // Slider 
 
+/*
+function checkSize() {
+  var sliderItemsDeafult = document.querySelectorAll('.tables__item');
+
+  sliderItemsDeafult.forEach(function (sliderItemDeafult) {
+    if (window.innerWidth <= 1080) {
+      sliderItemDeafult.classList.add('slider__item--one');
+    } else {
+      sliderItemDeafult.classList.remove('slider__item--one');
+    }
+  })
+}
+
+window.addEventListener('resize', checkSize);
+checkSize();
+*/
+
+const sliderOne = document.querySelectorAll('.slider__item--one');
+const controllsOne = document.querySelectorAll('.controlls--one');
+let indexSliderOne = 0;
+
+
+function showOne(indexOne) {
+  sliderOne[indexSliderOne].classList.remove('active');
+  sliderOne[indexOne].classList.add('active');
+  indexSliderOne = indexOne;
+}
+
+controllsOne.forEach((e) => {
+  e.addEventListener('click', () => {
+    if (event.target.classList.contains('prev')) {
+      let indexOne = indexSliderOne - 1;
+
+      if (indexOne < 0) {
+        indexOne = sliderOne.length - 1;
+      }
+
+      showOne(indexOne)
+    } else if (event.target.classList.contains('next')) {
+      let indexOne = indexSliderOne + 1;
+
+      if (indexOne >= sliderOne.length) {
+        indexOne = 0;
+      }
+      showOne(indexOne);
+    }
+  })
+});
+
+showOne(indexSliderOne);
+
+
 const sliderItems = document.querySelectorAll('.slider__item');
 const controlls = document.querySelectorAll('.controlls');
 let indexSlider = 0;
+
 
 function show(index) {
   sliderItems[indexSlider].classList.remove('active');
@@ -229,6 +282,18 @@ function viewAll(viewItem) {
 }
 
 
+// Menu-Burger
+
+let burgerMenu = document.querySelector('.menu__burger');
+let headerMenu = document.querySelector('.header-menu__wrapper');
+
+if (burgerMenu) {
+  burgerMenu.addEventListener("click", function (e) {
+    document.body.classList.toggle('_lock');
+    burgerMenu.classList.toggle('_active');
+    headerMenu.classList.toggle('_active');
+  })
+}
 
 
 

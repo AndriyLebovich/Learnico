@@ -22,14 +22,19 @@
 						<div class="header__logo">
 							<img src="" alt="">
 						</div>
-						<nav class="header__menu">
-							<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">Home</a>
-							<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">About</a>
-							<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">Blog</a>
-							<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">Contact</a>
-							<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">Courses</a>
-							<span class="header__menu-indicator"></span>
-						</nav>
+						<div class="menu__burger">
+							<span></span>
+						</div>
+						<div class="header-menu__wrapper">
+							<nav class="header__menu">
+								<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">Home</a>
+								<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">About</a>
+								<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">Blog</a>
+								<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">Contact</a>
+								<a href="#" class="header__menu-item" active-color="rgb(34, 164, 90)">Courses</a>
+								<span class="header__menu-indicator"></span>
+							</nav>
+						</div>
 						<div class="header__btn">
 							<div class="btn__search-wrapper">
 								<a href="#popup__search" class="btn__search popup-link">Search</a>
@@ -43,31 +48,30 @@
 						</div>
 					</div>
 					<div class="header__greeting">
-						<div class="greeting__info">
-							<div class="greeting__title">
-								<title>Become an No-Code expert and find a job</title>
-							</div>
-							<div class="greeting__text">
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel molestie magna
-									curabitur tincidunt nunc sit amet.</p>
-							</div>
-							<div class="greeting__btn">
-								<button data-goto=".courses__example--scroll" class="btn__explore">Explore Courses</button>
-								<div class="btn__watching-wrapper">
-									<a href="#popup__video" class="btn__watching popup-link">Watch Video</a>
+						<div class="greeting__main-content">
+							<div class="greeting__info">
+								<div class="greeting__title adaptive-text__big-title">
+									<title>Become an No-Code expert and find a job</title>
+								</div>
+								<div class="greeting__text adaptive-text__content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel molestie magna
+										curabitur tincidunt nunc sit amet.</p>
+								</div>
+								<div class="greeting__btn">
+									<button data-goto=".courses__example--scroll" class="btn__explore">Explore Courses</button>
+									<button href="#popup__video" class="btn__watching popup-link">Watch Video</button>
+								</div>
+								<div class="greeting__reviews">
+									<img src="/fonts/header/reviews.png" alt="" class="reviews__autors">
+									<div class="reviews__stars">
+										<img src="" alt="" class="stars__img">
+										<p class="stars__text">From 3k+ reviews</p>
+									</div>
 								</div>
 							</div>
-							<div class="greeting__reviews">
-								<img src="/fonts/header/reviews.png" alt="" class="reviews__autors">
-								<div class="reviews__stars">
-									<img src="" alt="" class="stars__img">
-									<p class="stars__text">From 3k+ reviews</p>
-								</div>
+							<div class="greeting__img">
+								<img src="/fonts/header/Good-foto.png" alt="">
 							</div>
-						</div>
-						<div class="greeting__img">
-							<img class="greeting__before" src="/fonts/header/before.png" alt="">
-							<img src="/fonts/header/greeting__img.png" alt="">
 						</div>
 					</div>
 					<div class="header__bottom-text">
@@ -82,70 +86,79 @@
 					<div class="about__title wrapper__title">
 						<title>About us</title>
 					</div>
-					<div class="about__sub-title wrapper__sub-title">
+					<div class="about__sub-title adaptive-text__big-title wrapper__sub-title">
 						<title>No-code Education Platform</title>
 					</div>
-					<div class="about__text">
+					<div class="about__text adaptive-text__content">
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
 							tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero
 							vitae erat.</p>
 					</div>
 					<div class="about__btn-container">
-						<a href="#popup__about-us" class="about__btn popup-link">About us</a>
+						<button href="#popup__about-us" class="about__btn btn-active popup-link">About us</button>
 					</div>
 				</div>
 			</section>
 			<section class="courses-info">
 				<div class="courses-info__container container">
-					<div class="courses-info__image--one courses-info__image">
-						<img src="/fonts/courses-info/IMAGE-1.png" alt="">
-					</div>
-					<div class="courses-info__content--one courses-info__content">
-						<div class="courses-info__title wrapper__sub-title">
-							<title>Premium courses from the industry leaders</title>
+					<div class="courses-info__content-wrapper--1">
+						<div class="courses-info__image--one courses-info__image">
+							<img src="/fonts/courses-info/IMAGE-1.png" alt="">
 						</div>
-						<div class="courses-info__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-								elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-								diam libero vitae <span id="hidden-text" class="courses-info__hidden-text">Lorem
-									ipsum dolor sit
-									amet, consectetur adipisicing elit. Quibusdam
-									autem maxime, minima a quos cum molestiae magnam ad ea eos natus esse nam. Molestias
-									voluptatem, nulla repudiandae dicta cum corporis.</span></p>
-						</div>
-						<div class="courses-info__buttons">
-							<div class="wrapper__register-btn">
-								<a href="#popup_register" class="courses-info__start popup-link">Get started</a>
+						<div class="courses-info__content--one courses-info__content">
+							<div class="courses-info__title adaptive-text__big-title wrapper__sub-title">
+								<title>Premium courses from the industry leaders</title>
 							</div>
-							<div class="wrapper__courses-link">
-								<button href="#hidden-text" class="courses-info__more btn-more">Learn
-									more</button>
+							<div class="courses-info__text adaptive-text__content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+									elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+									commodo
+									diam libero vitae <span id="hidden-text" class="courses-info__hidden-text">Lorem
+										ipsum dolor sit
+										amet, consectetur adipisicing elit. Quibusdam
+										autem maxime, minima a quos cum molestiae magnam ad ea eos natus esse nam. Molestias
+										voluptatem, nulla repudiandae dicta cum corporis.</span></p>
+							</div>
+							<div class="courses-info__buttons">
+								<div class="wrapper__register-btn">
+									<button href="#popup_register" class="courses-info__start btn-active popup-link">Get
+										started</button>
+								</div>
+								<div class="wrapper__courses-link">
+									<button href="#hidden-text" class="courses-info__more btn-more">Learn
+										more</button>
+								</div>
 							</div>
 						</div>
 					</div>
-					<div class="courses-info__image--two courses-info__image">
-						<img src="/fonts/courses-info/IMAGE-2.png" alt="">
-					</div>
-					<div class="courses-info__content--two courses-info__content">
-						<div class="courses-info__title wrapper__sub-title">
-							<title>Easily find the perfect course for you</title>
+					<div class="courses-info__content-wrapper--2">
+						<div class="courses-info__image--two courses-info__image">
+							<img src="/fonts/courses-info/IMAGE-2.png" alt="">
 						</div>
-						<div class="courses-info__text">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
-								elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo
-								diam libero vitae erat. <span id="hidden-text-two" class="courses-info__hidden-text">Lorem ipsum
-									dolor sit amet consectetur, adipisicing elit.
-									Corporis, repellendus pariatur! Incidunt ipsam perferendis nemo modi repudiandae doloremque
-									eaque. Molestias mollitia quasi sunt, atque aliquid exercitationem. Distinctio maxime id
-									beatae?</span></p>
-						</div>
-						<div class="courses-info__buttons">
-							<div class="wrapper__register-btn">
-								<a href="#popup_register" class="courses-info__start popup-link">Get started</a>
+						<div class="courses-info__content--two courses-info__content">
+							<div class="courses-info__title adaptive-text__big-title wrapper__sub-title">
+								<title>Easily find the perfect course for you</title>
 							</div>
-							<div class="wrapper__courses-link">
-								<button href="#hidden-text-two" class="courses-info__more btn-more">Learn
-									more</button>
+							<div class="courses-info__text adaptive-text__content">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros
+									elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
+									commodo
+									diam libero vitae erat. <span id="hidden-text-two" class="courses-info__hidden-text">Lorem
+										ipsum
+										dolor sit amet consectetur, adipisicing elit.
+										Corporis, repellendus pariatur! Incidunt ipsam perferendis nemo modi repudiandae
+										doloremque
+										eaque. Molestias mollitia quasi sunt, atque aliquid exercitationem. Distinctio maxime id
+										beatae?</span></p>
+							</div>
+							<div class="courses-info__buttons">
+								<div class="wrapper__register-btn">
+									<a href="#popup_register" class="courses-info__start btn-active popup-link">Get started</a>
+								</div>
+								<div class="wrapper__courses-link">
+									<button href="#hidden-text-two" class="courses-info__more btn-more">Learn
+										more</button>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -164,12 +177,12 @@
 							tristique. Duis cursus, mi quis viverra ornare.</p>
 					</div>
 					<div class="tending__tables courses__example--scroll">
-						<div class="tables__item tables__item--one">
+						<div class="tables__item tables__item--one slider__item--one">
 							<div class="item__info">
 								<div class="item__title wrapper__title">
 									<title>Beginner</title>
 								</div>
-								<div class="item__sub-title">
+								<div class="item__sub-title wrapper__sub-title">
 									<title>Webflow Basics</title>
 								</div>
 								<div class="item__price">
@@ -180,12 +193,12 @@
 								<button class="tables__btn">Enroll Course</button>
 							</div>
 						</div>
-						<div class="tables__item tables__item--two">
+						<div class="tables__item tables__item--two slider__item--one">
 							<div class="item__info">
 								<div class="item__title wrapper__title">
 									<title>Beginner</title>
 								</div>
-								<div class="item__sub-title">
+								<div class="item__sub-title wrapper__sub-title">
 									<title>Webflow Interactions Masterclass</title>
 								</div>
 								<div class="item__price">
@@ -196,12 +209,12 @@
 								<button class="tables__btn">Enroll Course</button>
 							</div>
 						</div>
-						<div class="tables__item tables__item--three">
+						<div class="tables__item tables__item--three slider__item--one">
 							<div class="item__info">
 								<div class="item__title wrapper__title">
 									<title>Beginner</title>
 								</div>
-								<div class="item__sub-title">
+								<div class="item__sub-title wrapper__sub-title">
 									<title>Advanced CMS and Integrations</title>
 								</div>
 								<div class="item__price">
@@ -211,6 +224,12 @@
 							<div class="item__btn">
 								<button class="tables__btn">Enroll Course</button>
 							</div>
+						</div>
+						<div>
+							<img class="prev controlls--one" src="/fonts/testimonials/slider/left.svg" alt="">
+						</div>
+						<div>
+							<img class="next controlls--one" src="/fonts/testimonials/slider/right.svg" alt="">
 						</div>
 					</div>
 				</div>
@@ -230,7 +249,7 @@
 									elementum tristique. Duis cursus, mi quis viverra ornare.</p>
 							</div>
 							<div class="wrapper__register-btn">
-								<a href="#popup_register" class="join__btn popup-link">Get started</a>
+								<button href="#popup_register" class="join__btn btn-active popup-link">Get started</button>
 							</div>
 						</div>
 						<div class="join__img">
@@ -353,7 +372,7 @@
 						</div>
 					</div>
 					<div class="wrapper__register-btn benefits__btn-container">
-						<a href="#popup_register" class="benefits__btn popup-link">Get started</a>
+						<button href="#popup_register" class="benefits__btn btn-active popup-link">Get started</button>
 					</div>
 				</div>
 			</section>
@@ -488,7 +507,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="blog__item-link">
+								<div class="blog__item-link blog__link-active link-active">
 									<a href="#">Read more</a>
 								</div>
 							</div>
@@ -511,7 +530,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="blog__item-link">
+								<div class="blog__item-link blog__link-active link-active">
 									<a href="#">Read more</a>
 								</div>
 							</div>
@@ -534,7 +553,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="blog__item-link">
+								<div class="blog__item-link blog__link-active link-active">
 									<a href="#">Read more</a>
 								</div>
 							</div>
@@ -557,7 +576,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="blog__item-link">
+								<div class="blog__item-link blog__link-active link-active">
 									<a href="#">Read more</a>
 								</div>
 							</div>
@@ -580,7 +599,7 @@
 										</p>
 									</div>
 								</div>
-								<div class="blog__item-link">
+								<div class="blog__item-link blog__link-active link-active">
 									<a href="#">Read more</a>
 								</div>
 							</div>
@@ -603,12 +622,11 @@
 										</p>
 									</div>
 								</div>
-								<div class="blog__item-link">
+								<div class="blog__item-link blog__link-active link-active">
 									<a href="#">Read more</a>
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</section>
@@ -633,12 +651,14 @@
 						<div class="popup__content">
 							<a href="#" class="popup__close close-popup">X</a>
 							<form action="#">
-								<title class="popup-register__title">Login</title>
-								<input type="text" id="username" placeholder="Enter your username">
-								<label for="username" onclick="expand(this)">USERNAME</label>
-								<input type="password" id="password" placeholder="Enter your password">
-								<label for="password" onclick="expand(this)">PASSWORD</label>
-								<button>SUBMIT</button>
+								<div class="form__container">
+									<title class="popup-register__title">Login</title>
+									<input type="text" id="username" placeholder="Enter your username">
+									<label for="username" onclick="expand(this)">USERNAME</label>
+									<input type="password" id="password" placeholder="Enter your password">
+									<label for="password" onclick="expand(this)">PASSWORD</label>
+									<button>SUBMIT</button>
+								</div>
 							</form>
 						</div>
 					</div>
@@ -730,98 +750,100 @@
 						</div>
 						<p class="input__text-bottom">and provide consent to receive updates from our company.</p>
 					</div>
-					<ul class="footer__page-sections">
-						<p class="page-section__title">
-							Pages
-						</p>
-						<li>
-							<a href="#">Home</a>
-						</li>
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-						<li>
-							<a href="#">Blog</a>
-						</li>
-						<li>
-							<a href="#">Courses</a>
-						</li>
-						<li>
-							<a href="#">Teachers</a>
-						</li>
-					</ul>
-					<ul class="footer__page-sections">
-						<p class="page-section__title">
-							CMS Pages
-						</p>
-						<li>
-							<a href="#">Blog Post</a>
-						</li>
-						<li>
-							<a href="#">Blog Categories</a>
-						</li>
-						<li>
-							<a href="#">Courses Single</a>
-						</li>
-						<li>
-							<a href="#">Courses Categories</a>
-						</li>
-						<li>
-							<a href="#">Product Page</a>
-						</li>
-						<li>
-							<a href="#">Product Categories</a>
-						</li>
-						<li>
-							<a href="#">Teachers Single</a>
-						</li>
-						<li>
-							<a href="#">Episode Single</a>
-						</li>
-					</ul>
-					<ul class="footer__page-sections">
-						<p class="page-section__title">
-							Account Pages
-						</p>
-						<li>
-							<a href="#">Login</a>
-						</li>
-						<li>
-							<a href="#">Sign Up</a>
-						</li>
-						<li>
-							<a href="#">Forgot Password</a>
-						</li>
-						<li>
-							<a href="#">Reset Password</a>
-						</li>
-						<li>
-							<a href="#">Email Confirmation</a>
-						</li>
-					</ul>
-					<ul class="footer__page-sections">
-						<p class="page-section__title">
-							Utility Pages
-						</p>
-						<li>
-							<a href="#">Style Guide</a>
-						</li>
-						<li>
-							<a href="#">Changelog</a>
-						</li>
-						<li>
-							<a href="#">Licenses</a>
-						</li>
-						<li>
-							<a href="#">404</a>
-						</li>
-						<li>
-							<a href="#">Password</a>
-						</li>
-					</ul>
+					<div class="footer__page-section-list">
+						<ul class="footer__page-sections">
+							<p class="page-section__title">
+								Pages
+							</p>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Home</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">About</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Contact</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Blog</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Courses</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Teachers</a>
+							</li>
+						</ul>
+						<ul class="footer__page-sections">
+							<p class="page-section__title">
+								CMS Pages
+							</p>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Blog Post</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Blog Categories</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Courses Single</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Courses Categories</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Product Page</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Product Categories</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Teachers Single</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Episode Single</a>
+							</li>
+						</ul>
+						<ul class="footer__page-sections">
+							<p class="page-section__title">
+								Account Pages
+							</p>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Login</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Sign Up</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Forgot Password</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Reset Password</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Email Confirmation</a>
+							</li>
+						</ul>
+						<ul class="footer__page-sections">
+							<p class="page-section__title">
+								Utility Pages
+							</p>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Style Guide</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Changelog</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Licenses</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">404</a>
+							</li>
+							<li class="footer__link-wrapper link-active">
+								<a href="#">Password</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 				<div class="footer__bottom">
 					<div class="footer__text-bottom">
